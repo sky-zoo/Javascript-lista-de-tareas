@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: verdana, sans-serif;
+}
+
+body{
+	background-color: #202020;
+}
+
+main{
+	/*border: 1px red solid;*/
+	display: flex;
+	padding-top: 100px;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+.escribir-tareas{
+	width: 25%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.escribir-tareas h2{
+	background-color: #2ded8c;
+	border-radius: 6px 6px 0 0;
+	padding: 8px;
+}
+
+input[type="text"]{
+	width: 100%;
+	font-size: 20px;
+	padding: 15px;
+	border: 1px #2ded8c solid;
+	/*background-color: 0 069px 6px; probar a jugar con esto*/
+	border-radius: 0 0 6px 6px;
+	margin-bottom: 3px;
+}
+
+input[type="button"]{
+	width: 50%;
+	border: 1px #2bf066 solid;
+	font-size: 22px;
+	border-radius: 6px;
+	background-color: #2ded8c;
+	padding: 8px;
+}
+
+input[type="button"]:hover{
+	cursor: pointer;
+}
+
+.cuadro-tareas{
+	width: 40%;
+	text-align: center;
+}
+
+.cuadro-tareas h2{
+	background-color: #2ded8c;
+	border-radius: 6px 6px 0 0;
+	padding: 8px;
+}
+
+.tareas ul{
+	background-color: #fff;
+	padding: 0;
+	list-style: none;
+	border-radius: 0 0 6px 6px;
+	border: 1px #2ded8c solid;
+}
+
+.item{
+	padding: 10px 0;
+	font-size: 24px;
+	border-bottom: 1px #ccc solid;
+	word-wrap: break-word;
+	display: flex;
+}
+
+.item:last-child{
+	border: none;
+}
+
+.itemTexto{
+	width: 90%;
+	padding: 20px;
+}
+
+.itemEliminar{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px #ccc solid;
+}
+
+.itemEliminar a{
+	color: #000;
+}
